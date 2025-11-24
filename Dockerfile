@@ -1,4 +1,4 @@
-FROM tomcat:10.1-jdk17
+FROM tomcat:10.1-jdk21
 
 # Eliminar aplicaciones por defecto
 RUN rm -rf /usr/local/tomcat/webapps/*
@@ -14,3 +14,4 @@ EXPOSE 8080
 
 # Iniciar Tomcat
 CMD ["catalina.sh", "run"]
+
